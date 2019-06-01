@@ -10,7 +10,7 @@ let hero = {
     }
 };
 
-hero.name = "Lidewij";
+
 const inn = document.getElementById("inn");
 console.log(inn);
 inn.onclick = function () {
@@ -58,6 +58,7 @@ function equipWeapon(hero) {
         return false;
     }
     hero.weapon = hero.inventory[0];
+    console.log(hero.weapon);
 };
 
 
