@@ -10,7 +10,7 @@ let hero = {
     }
 };
 
-
+hero.name = "Lidewij";
 const inn = document.getElementById("inn");
 console.log(inn);
 inn.onclick = function () {
@@ -37,11 +37,12 @@ daggerImage.onclick = function () {
 
 
 function rest(hero) {
-    console.log(hero);
+    if (hero.health === 10) {
+       return alert(`${hero.name}'s Health is already full!`);
+    } else {
     hero.health = 10;
-    console.log(hero.health);
-    console.log("Health set at 10");
     return hero;
+    }
 };
 
 function pickUpItem(hero, weaponObject) {
@@ -57,7 +58,6 @@ function equipWeapon(hero) {
         return false;
     }
     hero.weapon = hero.inventory[0];
-    //console.log(`FINAL HERO SHOULD RETURN WEAPON DAGGER----${hero}`);
 };
 
 
@@ -65,6 +65,11 @@ function equipWeapon(hero) {
 
 
 /*workbench
+
+
+    if (hero.health === 10) {
+        alert(`${hero.name}'s Health is already full!`);
+    }
 
 
 function myTest(hero) {
