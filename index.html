@@ -10,12 +10,23 @@
   
   <img id="inn" class="gameObject" alt='An inn' src="inn.png">
   <img id="dagger" class="gameObject" alt="A Dagger" src="https://www.medievalcollectibles.com/images/Product/medium/NP-H-23712.png">
-  
+  <img id="orc" class="enemyObject" alt="An orc" src="orc.png">
+  <img id="orc2" class="enemyObject" alt="Another orc" src="orc.png">
   <!-- 👍 YOUR HTML HERE 👍 -->
  </div>
+ 
+  <p><img id="bag" class="gameObject" alt="Inventory bag" src="bag.png"></p>
  <div id="hud">
-    <p><img id="bag" class="gameObject" alt="Inventory bag" src="bag.png"></p>
  </div>
+ <form onsubmit="submitName(); return false">
+    <div id="formSection">
+      <label for="name">Name your hero:</label>
+      <input type="text" id="name">
+    </div>
+    <div class="button">
+        <button type="default">Confirm</button>
+      </div>
+  </form>
 
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->

@@ -14,13 +14,23 @@ h2 {
     flex-flow: row wrap;
     justify-content: left;
     align-items: flex-start;
-    margin: 5rem;
+    margin: 0rem 5rem 5rem 5rem;
     width: 75%;
     background-color: bisque;
     border-color: rgb(226, 170, 101);
     border: 6px;
     height: 800x;
 }
+
+/* #bagSlot {
+    margin: 5rem;
+    width: 75%;
+    background-color: bisque;
+    border-color: rgb(226, 170, 101);
+    border: 6px;
+    height: 150x;
+} */
+
 .gameObject {
     width: 7rem;
     height: 7rem;
@@ -39,5 +49,79 @@ h2 {
 }
 
 #bag {
-   margin: 10px;
-} 
+    position: absolute;
+   left: 5rem;
+   top: 40rem;
+}
+
+
+
+#orc {
+    height: 18rem;
+    position: absolute;
+    left: 23rem;
+    top: 24rem;
+}
+
+#orc2 {
+    height: 12rem;
+    position: absolute;
+    left: 54rem;
+    top: 21rem;
+}
+
+
+
+form {
+    margin: 1rem 3rem 3rem 17rem;
+    width: 50%;
+    min-width: 15rem;
+    padding: 1rem;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.formSection {
+    margin: 1rem;
+}
+
+label {
+    display: inline-block;
+    width: 90%;
+}
+
+input, textarea {
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    min-height: 2rem;
+    font-size: 1.2rem;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5rem;
+}
+
+button {
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    margin: 1rem;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: black;
+    background-color: #e4cda4;
+  }
+  
+  button:hover,
+  button:focus {
+    color: black;
+    border-color: #e4cda4;
+    background-color: white;
+  }
+
+ 
