@@ -5,6 +5,22 @@
     background-image: url(game-landscape.jpg);
 }
 
+h2 {
+    margin: 2rem;
+}
+
+#hud {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: flex-start;
+    margin: 5rem;
+    width: 75%;
+    background-color: bisque;
+    border-color: rgb(226, 170, 101);
+    border: 6px;
+    height: 800x;
+}
 .gameObject {
     width: 7rem;
     height: 7rem;
@@ -18,12 +34,10 @@
 
 #inn {
     position: relative;
-    left: 18rem;
+    left: 25rem;
     top: 14rem;
 }
 
 #bag {
-    position: relative;
-    left: 0rem;
-    top: 36rem;
-}
+   margin: 10px;
+} 

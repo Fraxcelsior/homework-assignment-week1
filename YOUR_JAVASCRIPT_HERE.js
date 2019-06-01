@@ -36,6 +36,7 @@ daggerImage.onclick = function () {
 
 
 
+
 function rest(hero) {
     if (hero.health === 10) {
        return alert(`${hero.name}'s Health is already full!`);
@@ -60,6 +61,22 @@ function equipWeapon(hero) {
     hero.weapon = hero.inventory[0];
     console.log(hero.weapon);
 };
+
+function displayStats(hero) {
+    let hud = document.getElementById("hud");
+    let hudName = document.createElement("h2");
+    let hudHealth = document.createElement("h2");
+    let hudWeaponType = document.createElement("h2");
+    let hudWeaponDmg = document.createElement("h2");
+    hudName.innerHTML = `Hero name: ${hero.name}`; 
+    hudHealth.innerHTML = `Health: ${hero.health}`
+    hudWeaponType.innerHTML = `Weapontype: ${hero.weapon.type}`;
+    hudWeaponDmg.innerHTML = `DMG: ${hero.weapon.damage}`;
+    hud.appendChild(hudName);
+    hud.appendChild(hudHealth);
+    hud.appendChild(hudWeaponType);
+    hud.appendChild(hudWeaponDmg);
+}
 
 
 
