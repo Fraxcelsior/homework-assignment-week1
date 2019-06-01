@@ -1,0 +1,29 @@
+#gameBody {
+    margin: 5rem;
+    width: 75%;
+    height: 700px;
+    background-image: url(game-landscape.jpg);
+}
+
+.gameObject {
+    width: 7rem;
+    height: 7rem;
+}
+
+#dagger {
+    position: relative;
+    left: 35rem;
+    top: 25rem;
+}
+
+#inn {
+    position: relative;
+    left: 18rem;
+    top: 14rem;
+}
+
+#bag {
+    position: relative;
+    left: 0rem;
+    top: 36rem;
+}
